@@ -1,11 +1,16 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+
+// Initialize Firebase
 const config = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  apiKey: "AIzaSyCV3VmJRQFG86O5xGeH_sw80yNXJYC7UlU",
+  authDomain: "friendlyeats-51579.firebaseapp.com",
+  projectId: "friendlyeats-51579",
+  storageBucket: "friendlyeats-51579.appspot.com",
+  messagingSenderId: "706692858940",
+  appId: "1:706692858940:web:12a1b818d68938337caf39"
 };
+const app = initializeApp(firebaseConfig);
 
 // When deployed, there are quotes that need to be stripped
 Object.keys(config).forEach((key) => {
